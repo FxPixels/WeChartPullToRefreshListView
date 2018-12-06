@@ -1,0 +1,10 @@
+<view class="scroller scroller-class" style="height:{{contentHeight}}px">
+    <include src="./utils/refreshHeaderView.wxml" />
+    <scroll-view class="scroll_container" scroll-y="true" style="position:relative;width:100%;left:0;height:{{contentHeight}}px;top:{{loadMoreHeight == 0? refreshHeight:-loadMoreHeight}}px;bottom:{{loadMoreHeight}}px;" bindscroll="scroll" bindscrolltolower="lower" bindscrolltoupper="upper" bindtouchstart="start" bindtouchend="end">
+        <view style="width:100%;height:100%" bindtouchmove="move">
+            <slot></slot>
+            <view class="load-end" wx:if="{{loadEnd}}">{{loadEndText}}</view>
+        </view> 
+    </scroll-view>
+    <include src="./utils/loadMoreFooterView.wxml" />
+</view>

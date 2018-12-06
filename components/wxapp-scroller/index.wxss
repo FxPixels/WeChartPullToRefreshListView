@@ -1,0 +1,11 @@
+@import './utils/refreshView.wxss';
+
+.load-end{
+  padding: 15px;
+  font-size: 30rpx;
+  text-align: center;
+}
+
+.scroller{
+  position: relative;
+}

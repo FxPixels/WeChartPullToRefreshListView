@@ -1,7 +1,6 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/ListView/ListView",
     "pages/logs/logs"
   ],
   "window":{

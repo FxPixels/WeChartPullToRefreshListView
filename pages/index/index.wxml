@@ -1,0 +1,25 @@
+<!-- index.wxml -->
+<view class="container">
+
+  <view>xcvxcv</view><view>xcvxcv</view><view>xcvxcv</view><view>xcvxcv</view>
+  <view>-------------------------------</view>
+  <wxapp-scroller id="wxapp-scroller" bind:refresh="refresh" bind:loadMore="loadMore">
+    <view>xcvxcv</view>
+    <view>xcvxcv</view>
+    <view>xcvxcv</view>
+    <view>xcvxcv</view>
+    <view>xcvxcv</view>
+    <view>xcvxcv</view>
+    <view>xcvxcv</view>
+    <view>xcvxcv</view>
+    <view>xcvxcv</view>
+    <view>xcvxcv</view>
+    <view>xcvxcv</view>
+    <view>xcvxcv</view>
+    <view>xcvxcv</view>
+    <view>xcvxcv</view>
+    <view>xcvxcv</view>
+    <view>xcvxcv</view>
+    <view>xcvxcv1234</view>
+  </wxapp-scroller>
+</view>

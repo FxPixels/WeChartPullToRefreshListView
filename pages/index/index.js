@@ -18,7 +18,13 @@ Page({
   refresh(){
     let that = this
     setTimeout(() => {
-      this.selectComponent('#wxapp-scroller').done(true)
+      that.selectComponent('#wxapp-scroller').done(true)
+    }, 2000);
+  },
+  loadMore(){
+    let that = this
+    setTimeout(() => {
+      that.selectComponent('#wxapp-scroller').doLoadEnd(true)
     }, 2000);
   }
 })

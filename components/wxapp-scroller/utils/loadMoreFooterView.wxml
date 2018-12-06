@@ -1,0 +1,4 @@
+<view class="loadMore-block" style="height:{{loadMoreHeight}}px;background-color:{{loadBackground}}"> 
+        <image  class="{{loading?'roate':(pull?'pull':'')}}" src="{{loading?loadingImg:beginLoading}}"></image>
+        <text  class="loading-text" >{{loading_text}}</text> 
+</view> 

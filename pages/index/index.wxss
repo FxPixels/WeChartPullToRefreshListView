@@ -1,0 +1,9 @@
+.container{
+  height: 400px;
+  overflow: hidden;
+}
+
+#wxapp-scroller{
+  position: relative;
+  height: 200px;
+}
