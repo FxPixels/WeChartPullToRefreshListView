@@ -12,7 +12,8 @@
 
 ```
 
-另外可下载项目，打开 /page/index/index，即可查看demo。
+另外可下载项目，打开 /page/index/index，即可查看demo。最后，感谢原作者 @congxc 。
+---
 属性方法一览表：
 
 | 属性参数（props） |                                                     |          |          |
