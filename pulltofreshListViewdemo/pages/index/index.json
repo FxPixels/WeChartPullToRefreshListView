@@ -1,1 +1,5 @@
-{}
+{
+  "usingComponents": {
+    "wxapp-scroller": "../../components/wxapp-scroller/index"
+  }
+}
