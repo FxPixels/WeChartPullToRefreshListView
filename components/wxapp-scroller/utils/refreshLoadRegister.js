@@ -4,6 +4,7 @@
  * json为注册回调事件
  */
 let o = {}
+let transition = '0.2s'
 
 function setOptions(context, options) {
   o = Object.assign(options, o)
@@ -31,6 +32,7 @@ function register(context, options) {
     loadingImg: o.loadingImg,
     loadBackground: o.loadBackground,
     loadEnd: false,
+    transition: 0,
 
     loadingHeight: 48, //正在加载时高度
     refreshHeight: 0, //刷新布局高度  
@@ -114,6 +116,7 @@ function start(context, e) {
     downY: clientY,
     refreshHeight: 0,
     loadMoreHeight: 0,
+    transition: 0,
     pull: true,
     refreshing_text: o.beginRefreshText,
     loading_text: o.beginLoadText
@@ -166,19 +169,19 @@ function loadFinish(context, success) {
   if (success === true) {
     context.setData({
       refreshing_text: o.refreshSuccessText,
-      loading_text: o.loadSuccessText
+      loading_text: o.loadSuccessText,
     });
   } else if(success === false) {
     context.setData({
       refreshing_text: o.refreshErrorText,
-      loading_text: o.loadErrorText
+      loading_text: o.loadErrorText,
     });
   }else{
     context.setData({
       loading_text: o.loadEndText
     });
   }
-  setTimeout(function () {
+  // setTimeout(function () {
     //2s后刷新结束
     context.setData({
       refreshHeight: 0,
@@ -186,7 +189,7 @@ function loadFinish(context, success) {
       loading: false
     });
 
-  }, 500);
+  // }, 500);
 }
 
 function move(context, e) {
@@ -218,6 +221,7 @@ function move(context, e) {
     if (context.data.refreshHeight > context.data.loadingHeight) {
       context.setData({
         pull: false,
+        transition: transition,
         refreshing_text: o.freedRefreshText
       })
     } else {
@@ -234,6 +238,7 @@ function move(context, e) {
     if (context.data.loadMoreHeight > context.data.loadingHeight) {
       context.setData({
         pull: false,
+        transition: transition,
         loading_text: o.freedLoadText
       })
     } else {

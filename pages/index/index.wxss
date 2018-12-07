@@ -6,4 +6,5 @@
 #wxapp-scroller{
   position: relative;
   height: 200px;
+  overflow: hidden;
 }

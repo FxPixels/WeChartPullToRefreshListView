@@ -30,7 +30,7 @@ Component({
         loadingImg: './images/icon_loading.png',
         loadBackground: '#fff',
         loadEndText: '没有更多数据',
-        distance: 60,
+        distance: 54,
         pullFactor: 0.6,
       }
     },
